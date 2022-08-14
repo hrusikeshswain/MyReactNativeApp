@@ -3,10 +3,10 @@ import { StyleSheet, Text, View, StatusBar,TouchableOpacity } from 'react-native
 import { colours,fontFamilies,fontSizes,borderRadius } from './configuration';
 // Packages
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import CodePush from 'react-native-code-push';
 
 
-
-export default class About extends React.Component {
+class About extends React.Component {
 
   _is_Mounted = false;
   
@@ -165,3 +165,7 @@ const styles = StyleSheet.create({
     // elevation: (Platform.OS === 'android') ? 2 : null // Beware, this puts the styled "View" over all other at Android (even a "Select" if it has no "elevation")
   }
 });
+
+// const About = CodePush(About);
+
+export default About; 
