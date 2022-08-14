@@ -112,7 +112,7 @@ class About extends React.Component {
                
                <TouchableOpacity style={[styles.button,styles.dropsShadow,{ backgroundColor: colours.plum }]}>
                      <Text style={[styles.lightSmallText, { color: colours.white }]}>
-                      {'Email us'}
+                      {'Email'}
                      </Text>
                </TouchableOpacity>
 
@@ -168,4 +168,4 @@ const styles = StyleSheet.create({
 
 // const About = CodePush(About);
 
-export default About; 
+export default CodePush(About); 
