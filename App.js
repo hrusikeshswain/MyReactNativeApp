@@ -6,6 +6,17 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import CodePush from 'react-native-code-push';
 
 
+let CodePushOptions = {
+  checkFrequency: CodePush.CheckFrequency.ON_APP_RESUME,
+  mandatoryInstallMode: CodePush.InstallMode.IMMEDIATE,
+  updateDialog: {
+    appendReleaseDescription: true,
+    title: "a new update is available!"
+  }
+};
+
+
+
 class About extends React.Component {
 
   _is_Mounted = false;
@@ -112,7 +123,7 @@ class About extends React.Component {
                
                <TouchableOpacity style={[styles.button,styles.dropsShadow,{ backgroundColor: colours.plum }]}>
                      <Text style={[styles.lightSmallText, { color: colours.white }]}>
-                      {'Email'}
+                      {'Email Me'}
                      </Text>
                </TouchableOpacity>
 
@@ -168,4 +179,4 @@ const styles = StyleSheet.create({
 
 // const About = CodePush(About);
 
-export default CodePush(About); 
+export default CodePush(CodePushOptions)(About); 
