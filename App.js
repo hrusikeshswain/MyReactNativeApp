@@ -16,7 +16,6 @@ let CodePushOptions = {
 };
 
 
-
 class About extends React.Component {
 
   _is_Mounted = false;
@@ -122,8 +121,8 @@ class About extends React.Component {
             <View style={{flexDirection:'row', alignItems: 'center',justifyContent: 'center'}}>
                
                <TouchableOpacity style={[styles.button,styles.dropsShadow,{ backgroundColor: colours.plum }]}>
-                     <Text style={[styles.lightSmallText, { color: colours.white }]}>
-                      {'Email Us'}
+                     <Text style={[styles.lightSmallText, { color: colours.white }]} onPress={this.buttonClickHandler}>
+                      {'Emailing To You for Checking Update Status'}
                      </Text>
                </TouchableOpacity>
 
