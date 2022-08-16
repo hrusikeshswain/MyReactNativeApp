@@ -123,7 +123,7 @@ class About extends React.Component {
                
                <TouchableOpacity style={[styles.button,styles.dropsShadow,{ backgroundColor: colours.plum }]}>
                      <Text style={[styles.lightSmallText, { color: colours.white }]}>
-                      {'Email Me'}
+                      {'Email Us'}
                      </Text>
                </TouchableOpacity>
 
